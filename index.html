@@ -1,10 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Encriptador de Texto</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Izquierda -->
+      <div class="left-section">
+        <div class="logo">
+          <img src="img/Logo@2x.png" alt="Logo" class="logo-img" />
+        </div>
+        <div class="input-area">
+          <textarea
+            id="input-text"
+            class="input-textarea"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+        </div>
+        <div class="info">
+          <span class="info-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              width="1.1em"
+              height="1.1em"
+              viewBox="0 0 48 48"
+            >
+              <defs>
+                <mask id="IconifyId190557b473426aa790">
+                  <g fill="none">
+                    <path
+                      fill="#555"
+                      stroke="#fff"
+                      stroke-linejoin="round"
+                      stroke-width="4"
+                      d="M24 44a19.937 19.937 0 0 0 14.142-5.858A19.937 19.937 0 0 0 44 24a19.938 19.938 0 0 0-5.858-14.142A19.937 19.937 0 0 0 24 4A19.938 19.938 0 0 0 9.858 9.858A19.938 19.938 0 0 0 4 24a19.937 19.937 0 0 0 5.858 14.142A19.938 19.938 0 0 0 24 44Z"
+                    />
+                    <path
+                      fill="#fff"
+                      fill-rule="evenodd"
+                      d="M24 11a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5"
+                      clip-rule="evenodd"
+                    />
+                    <path
+                      stroke="#fff"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="4"
+                      d="M24.5 34V20h-2M21 34h7"
+                    />
+                  </g>
+                </mask>
+              </defs>
+              <path
+                fill="currentColor"
+                d="M0 0h48v48H0z"
+                mask="url(#IconifyId190557b473426aa790)"
+              />
+            </svg>
+          </span>
+          <span class="info-text">Solo letras minúsculas y sin acentos</span>
+        </div>
+        <div class="buttons">
+          <button onclick="encrypt()" class="encrypt-btn">Encriptar</button>
+          <button onclick="decrypt()" class="decrypt-btn">Desencriptar</button>
+        </div>
+      </div>
+      <!-- Derecha -->
+      <div class="right-section">
+        <div id="right-section">
+          <img
+            src="img/Muñeco.png"
+            alt="Imagen descriptiva"
+            class="descriptive-img"
+          />
+          <h2 class="message-title">Ningún mensaje fue encontrado</h2>
+          <p class="message-text">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+        <div id="copy-success" class="copy-success hidden">
+          Texto copiado con éxito!
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>

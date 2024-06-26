@@ -1,39 +1,4 @@
-# Encriptador de Texto
-
-Este proyecto es una aplicación web simple que permite encriptar y desencriptar texto utilizando un cifrado de desplazamiento.
-
-## Descripción
-
-La aplicación toma un texto de entrada y lo encripta desplazando cada letra un número fijo de posiciones en el alfabeto. De manera similar, puede desencriptar el texto previamente encriptado devolviendo las letras a sus posiciones originales. La aplicación está diseñada para aceptar solo letras minúsculas sin acentos.
-
-## Características
-
-- Encriptar texto utilizando un cifrado de desplazamiento (shift).
-- Desencriptar texto previamente encriptado.
-- Validación para asegurarse de que el texto solo contiene letras minúsculas y sin acentos.
-- Copiar el resultado al portapapeles con un solo clic.
-
-## Estructura del Proyecto
-
-- `index.html`: El archivo HTML principal que contiene la estructura de la aplicación.
-- `css/styles.css`: El archivo CSS que contiene los estilos de la aplicación.
-- `js/script.js`: El archivo JavaScript que contiene la lógica para encriptar, desencriptar y copiar el texto al portapapeles.
-- `img/Logo@2x.png`: Imagen del logo utilizado en la aplicación.
-- `img/Muñeco.png`: Imagen descriptiva mostrada en la sección derecha.
-
-## Cómo Usar
-
-1. Clona el repositorio en tu máquina local.
-2. Abre el archivo `index.html` en tu navegador web.
-3. Ingresa el texto que deseas encriptar en el área de texto proporcionada.
-4. Haz clic en el botón "Encriptar" para encriptar el texto.
-5. Haz clic en el botón "Desencriptar" para desencriptar el texto.
-6. Para copiar el resultado al portapapeles, haz clic en el botón "Copiar al portapapeles" que aparece debajo del texto resultante.
-
-## Código CSS
-
-```css
-
+/* General Styles */
 body,
 html {
   margin: 0;
@@ -179,7 +144,7 @@ html {
 
 @media screen and (min-width: 1024px) {
   .descriptive-img {
-    display: inline; 
+    display: inline;
     margin-bottom: 1rem;
     max-width: 100%;
     height: auto;
